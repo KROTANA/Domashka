@@ -1,0 +1,14 @@
+#BasedPars
+import requests
+#pip install requests
+from bs4 import BeautifulSoup
+#pip install bs4
+Dollar = '' #Cсылка на странциу парсинга
+header = {''} #В поиске MyUserAGent
+full_page = requests.get(Dollar,headers=header)
+soup = BeautifulSoup(full_page.content, 'html.parser')
+convert = soup.findAll('span',{"class":"main__big__title"})#Поиск по названию элемента и его класса
+convert2 = soup.findAll('span',{"class":"main__feed__title"})
+print(convert[0].text)
+print(convert2[0].text)
+#print(convert2[0].get('value'))-вернуть значение атрибута

@@ -10,9 +10,9 @@ def check():
 
 while True:
     try:
-        a = int(input())
-        b = int(input())
-        c = int(input())
+        a = float(input())
+        b = float(input())
+        c = float(input())
         check()
         break
     except:

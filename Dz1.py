@@ -6,11 +6,7 @@ def check():
         print(apfer)
     else:
         print('пиши по новой')
-def sfsff():
-    a = int(input())
-    b = int(input())
-    c = int(input())
-    return a,b,c
+
 
 while True:
     try:

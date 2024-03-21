@@ -2,6 +2,7 @@
 # import torch
 # import cv2
 # from PIL import Image
+#pip install ultralytics
 #
 # model = YOLO("yolov8n.yaml")  # build a new model from scratch
 #
@@ -113,7 +114,8 @@ class DetectModel:
         result = reader.readtext(image_path)
         for detection in result:
             print(detection[1])
-
+#pip uninstall opencv-python
+#pip install opencv-python
 DataM = DetectModel()
 # DataM.Video('videos','test.mp4')#Проверяем видео
 DataM.Photo('kakie-nomera-na-avto-ispolzuyutsya-u-spetssluzhb-rossii.jpg')#Про
